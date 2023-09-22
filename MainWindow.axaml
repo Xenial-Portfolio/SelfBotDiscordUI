@@ -1,0 +1,40 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:local="using:SelfBotDiscordUI.Bot.Logs"
+        mc:Ignorable="d" d:DesignWidth="802" d:DesignHeight="425"
+        x:Class="SelfBotDiscordUI.MainWindow"
+        Title="Self-Bot DiscordUI">
+	<Canvas>
+		
+		<Panel Height="180" Width="185" Name="SettingsPanel" Canvas.Left="8" Canvas.Top="14">
+			<Button Height="23" Width="75" Name="Button1" Margin="14, 0, 0, 75" Foreground="White" FontSize="10" HorizontalContentAlignment="Center"></Button>
+			<Button Height="23" Width="75" Name="Button2" Margin="14, 0, 0, 25" Foreground="White" FontSize="10" HorizontalContentAlignment="Center"></Button>
+			<Button Height="23" Width="75" Name="Button3" Margin="14, 0, 0, -25" Foreground="White" FontSize="10" HorizontalContentAlignment="Center"></Button>
+			<Button Height="23" Width="75" Name="Button4" Margin="14, 0, 0, -75" Foreground="White" FontSize="10" HorizontalContentAlignment="Center"></Button>
+			<Button Height="23" Width="75" Name="Button5" Margin="14, 0, 0, -125" Foreground="White" FontSize="10" HorizontalContentAlignment="Center"></Button>
+			<Button Height="23" Width="75" Name="Button6" Margin="95, 0, 0, 75" Foreground="White" FontSize="10" HorizontalContentAlignment="Center"></Button>
+			<Button Height="23" Width="75" Name="Button7" Margin="95, 0, 0, 25" Foreground="White" FontSize="10" HorizontalContentAlignment="Center"></Button>
+			<Button Height="23" Width="75" Name="Button8" Margin="95, 0, 0, -25" Foreground="White" FontSize="10" HorizontalContentAlignment="Center"></Button>
+			<Button Height="23" Width="75" Name="Button9" Margin="95, 0, 0, -75" Foreground="White" FontSize="10" HorizontalContentAlignment="Center"></Button>
+			<Button Height="23" Width="75" Name="Button10" Margin="95, 0, 0, -125" Foreground="White" FontSize="10" HorizontalContentAlignment="Center"></Button>
+		</Panel>
+		
+		<Panel Height="180" Width="185" Name="TogglesPanel" Canvas.Left="8" Canvas.Bottom="35">
+			<CheckBox Height="29" Width="120" Name="CheckBox1" Margin="40, 0, 0, 65" Foreground="White" FontSize="15" HorizontalContentAlignment="Left"></CheckBox>
+			<CheckBox Height="29" Width="120" Name="CheckBox2" Margin="40, 0, 0, 10" Foreground="White" FontSize="15" HorizontalContentAlignment="Left"></CheckBox>
+			<CheckBox Height="29" Width="120" Name="CheckBox3" Margin="40, 0, 0, -45" Foreground="White" FontSize="15" HorizontalContentAlignment="Left"></CheckBox>
+			<CheckBox Height="29" Width="120" Name="CheckBox4" Margin="40, 0, 0, -100" Foreground="White" FontSize="15" HorizontalContentAlignment="Left"></CheckBox>
+		</Panel>
+
+		<TextBlock Height="70" Width="70" Name="MessagesLabel" Canvas.Right="530" Canvas.Top="12" Text="Messages:" FontSize="12" FontFamily="Segoe UI" Foreground="White"></TextBlock>
+		<TextBlock Height="70" Width="150" Name="LogDateLabel" Canvas.Right="-35" Canvas.Top="12" Text="Date: 2022-10-17" FontSize="12" Foreground="White"></TextBlock>
+		<TextBlock Height="70" Width="150" Name="SettingsLabel" Canvas.Right="612" Canvas.Top="12" Text="Settings:" FontSize="30" FontFamily="Segoe UI" Foreground="White"></TextBlock>
+		<TextBlock Height="70" Width="150" Name="TogglesLabel" Canvas.Right="605" Canvas.Top="210" Text="Toggles:" FontSize="30" FontFamily="Segoe UI" Foreground="White"></TextBlock>
+
+		<ListBox Height="355" Width="590" Name="MessageBoxCollection" Canvas.Right="11" Canvas.Bottom="37" Background="Black" Foreground="Teal" BorderThickness="1" BorderBrush="White" Grid.Row="1" ScrollViewer.HorizontalScrollBarVisibility="Visible"></ListBox>
+		<CheckBox Height="19" Width="125" Name="EnableSelfBotToggle" Canvas.Left="200" Canvas.Bottom="5" Content="Enable SelfBot" FontSize="12" IsChecked="true" Foreground="White" HorizontalContentAlignment="Left"></CheckBox>
+		<CheckBox Height="19" Width="150" Name="EnableAdvancedLoggerToggle" Canvas.Left="325" Canvas.Bottom="5" Content="Advanced Logging" FontSize="12" IsChecked="true" Foreground="White" HorizontalContentAlignment="Left"></CheckBox>
+	</Canvas>
+</Window>
