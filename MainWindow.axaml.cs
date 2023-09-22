@@ -27,7 +27,7 @@ namespace SelfBotDiscordUI
 
         private Thread _discordThread, _checkTogglesThread;
 
-        private const string Token = "Mjg5MDgxMDE0MDk1OTcwMzA0.YT1Jrg.B-xCIyIljGCLPJvpCZO_BGxOTdE";
+        private const string Token = "TokenHere";
 
         public MainWindow()
         {
